@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Map with Point</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        #map {
+            height: 450px;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Статистика по коробляем SpaceX</h1>
+    <p id="theMostPopularShipRole"></p>
+    <p id="theMostPopularShipRoleCount"></p>
+    <p id="theMostUnpopularShipRole"></p>
+    <p id="theMostUnpopularShipRoleCount"></p>
+    <div id="pieCheckboxes"></div>
+    <canvas id="myChart"></canvas>
+    <h1>Карта с локацией пользователей</h1>
+    <div id="map"></div>
+    <h1>Статистика выполненых задач пользователя</h1>
+    <canvas id="chart"></canvas>
+    <div>
+        <input type="checkbox" onclick="onCheckboxesClick()" id="isCompleted" />
+        <label for="isCompleted">Завершенные</label>
+    </div>
+    <div>
+        <input type="checkbox" onclick="onCheckboxesClick()" id="isUncompleted" />
+        <label for="isUncompleted">Незавершенные</label>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
