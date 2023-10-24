@@ -115,7 +115,7 @@ function updateChart() {
   if (isCompltedChecked) {
     datasets.push(
       {
-        label: 'Завершенные задачии',
+        label: 'Завершенные задачи',
         data: users.map(user => todos.filter(todo => user.id == todo.userId && todo.completed).length
         ),
         backgroundColor: 'green',
