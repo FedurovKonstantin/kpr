@@ -10,6 +10,8 @@ fetch('https://api.spacexdata.com/v4/ships')
     .then(ships => {
         const popularity = shipsRolePopularity(ships)
 
+        console.log(123)
+
         document.getElementById("theMostPopularShipRole").textContent = "Самая распространенная роль корабля: " + popularity.mostPopularName
         document.getElementById("theMostPopularShipRoleCount").textContent = "Количество самых распространенных ролей корабля: " + popularity.mostPopularCount
         document.getElementById("theMostUnpopularShipRole").textContent = "Самая нераспространенная роль корабля: " + popularity.mostUnpopularName
