@@ -13,9 +13,9 @@ fetch('https://api.spacexdata.com/v4/ships')
         console.log(123)
 
         document.getElementById("theMostPopularShipRole").textContent = "Самая распространенная роль корабля: " + popularity.mostPopularName
-        document.getElementById("theMostPopularShipRoleCount").textContent = "Количество самых распространенных ролей корабля: " + popularity.mostPopularCount
+        document.getElementById("theMostPopularShipRoleCount").textContent = "Количество: " + popularity.mostPopularCount
         document.getElementById("theMostUnpopularShipRole").textContent = "Самая нераспространенная роль корабля: " + popularity.mostUnpopularName
-        document.getElementById("theMostUnpopularShipRoleCount").textContent = "Количество самых нераспространенных ролей корабля: " + popularity.mostUnpopularCount
+        document.getElementById("theMostUnpopularShipRoleCount").textContent = "Количество: " + popularity.mostUnpopularCount
 
 
 
@@ -49,8 +49,6 @@ fetch('https://api.spacexdata.com/v4/ships')
             checkbox.type = 'checkbox';
             checkbox.id = role;
             checkbox.name = role;
-            checkbox.title = "wer"
-
             checkbox.checked = true;
 
             checkboxes.push(checkbox)
